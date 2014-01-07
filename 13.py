@@ -1,3 +1,5 @@
+# Code from Exercise 13 on codecademy.com
+
 from random import randint
 
 board = []
