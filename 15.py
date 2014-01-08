@@ -20,3 +20,12 @@ def digit_sum(n):
         print "i=" + i
         sum += int(i)
     return sum
+
+def factorial(x):
+    to_return = 1
+    if x == 0:
+        return 0
+    while x > 0:
+        to_return *= x
+        x -= 1
+    return to_return
