@@ -29,3 +29,20 @@ def factorial(x):
         to_return *= x
         x -= 1
     return to_return
+
+def is_prime(x):
+    if x < 2:
+        return False
+    to_check = x - 1
+    while to_check > 1:
+        if x % to_check == 0:
+            return False
+        to_check -= 1
+    return True
+
+def reverse(text):
+    to_return = ""
+    for n in range(len(text)):
+        print to_return
+        to_return += text[len(text)-n - 1]
+    return to_return
