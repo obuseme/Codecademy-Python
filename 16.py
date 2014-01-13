@@ -15,3 +15,10 @@ def grades_sum(scores):
 def grades_average(scores):
     to_return = float(grades_sum(scores)) / float(len(scores))
     return to_return
+
+def grades_variance(scores, average):
+    variance = 0
+    for score in scores:
+        variance += (average - score) ** 2
+    variance /= len(scores)
+    return variance
